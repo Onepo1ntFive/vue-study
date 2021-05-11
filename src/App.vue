@@ -1,21 +1,16 @@
 <template>
-    <div id="app"></div>
-</template>
+    <div id="app">
+        <h1>Вуе.джэс бич</h1>
+        <hr />
 
-<script>
-export default {
-    name: "App",
-    components: {},
-};
-</script>
+        <router-view />
+    </div>
+</template>
 
 <style>
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
 }
 </style>
