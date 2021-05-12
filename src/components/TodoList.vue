@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <TodoItem 
+        <TodoItem
             v-for="(todo, i) of todos"
             v-bind:todo="todo"
             v-bind:index="i"
@@ -18,18 +18,16 @@ export default {
     },
     methods: {
         removeTodo(id) {
-            this.$emit('remove-todo', id)
-        }
-    }
+            this.$emit("remove-todo", id);
+        },
+    },
 };
 </script>
 
 <style scoped>
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 </style>
